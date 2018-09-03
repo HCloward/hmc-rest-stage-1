@@ -154,6 +154,26 @@ class DBHelper {
   }
 
   /**
+   * Index image srcset.
+   */
+  static imageSrcsetForIndex(restaurant) {
+    return (`${restaurant.srcset_index}`);
+  }
+
+  /**
+   * Restaurant image srcset.
+   */
+  static imageSrcsetForRestaurant(restaurant) {
+    return (`${restaurant.srcset_restaurant}`);
+  }
+
+  static imageAltForRestaurant(restaurant) {
+    return (`${restaurant.alt}`);
+  }
+
+  
+
+  /**
    * Map marker for a restaurant.
    */
    static mapMarkerForRestaurant(restaurant, map) {
